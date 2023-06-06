@@ -1,12 +1,30 @@
 
 $(document).ready(function(){
     showHome();
+
+    $("#name").on("input", function (event){
+        if($("#name")){
+
+        }
+    })
+
+    $("#subject").on("input", function (event){
+        if($("#name")){
+
+        }
+    })
+
+    $("#message").on("input", function (event){
+        if($("#name")){
+
+        }
+    })
 })
  
- $("#home-button").on("click", showHome());
-    $("#about-button").on("click", showAbout());
-    $("#projects-button").on("click", showProjects());
-    $("#contact-button").on("click", showContact());
+$("#home-button").on("click", showHome());
+$("#about-button").on("click", showAbout());
+$("#projects-button").on("click", showProjects());
+$("#contact-button").on("click", showContact());
 
 
 function showHome(){
