@@ -19,13 +19,25 @@ $(document).ready(function(){
 
         }
     })
+
+    $("#personal-number").on("click", function(event){
+
+        $("#personal-number").appendChild();
+    })
 })
- 
+
+$("#switch").on("click", toggle());
+
 $("#home-button").on("click", showHome());
 $("#about-button").on("click", showAbout());
 $("#projects-button").on("click", showProjects());
 $("#contact-button").on("click", showContact());
 
+
+function toggle(){
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}
 
 function showHome(){
     //alert("home");

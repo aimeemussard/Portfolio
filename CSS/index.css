@@ -1,3 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  height: auto;
+  background-color: transparent;
+  color: black;
+}
+
+.dark-mode{
+  color: white;
+  background-color: #333;
+}
+
+header {
+  height: 7vh;
+}
+
+nav {
+  height: 7vh;
+  width: 100vw;
+  background-color: transparent;
+  border-bottom: 2px solid rgb(128, 0, 105);
+  position: fixed;
+  backdrop-filter: blur(10px);
+}
+
+ul, li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  color: rgb(128, 0, 105);
+}
+
+li {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.15em;
+}
+
+.switch {
+  position: relative;
+  height: 1.5rem;
+  width: 3rem;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 9999px;
+  background-color: rgba(100, 116, 139, 0.377);
+  transition: all 0.3s ease;
+}
+
+.switch:checked {
+  background-color: rgb(236, 72, 153);
+}
+
+.switch::before {
+  position: absolute;
+  content: "";
+  left: -0.1rem;
+  top: -0.1rem;
+  display: block;
+  height: 1.6rem;
+  width: 1.6rem;
+  cursor: pointer;
+  border: 1px solid rgba(100, 116, 139, 0.527);
+  border-radius: 9999px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 3px 10px rgba(100, 116, 139, 0.327);
+  transition: all 0.3s ease;
+}
+
+.switch:hover::before {
+  box-shadow: 0 0 0px 8px rgba(0, 0, 0, 0.15);
+}
+
+.switch:checked:hover::before {
+  box-shadow: 0 0 0px 8px rgba(236, 72, 153, 0.15);
+}
+
+.switch:checked:before {
+  transform: translateX(100%);
+  border-color: rgb(236, 72, 153);
+}
+
+input[type=text], input[type=email] {
+  border: none;
+  border-bottom: 1px solid #333;
+  border-radius: 0%;
+  outline: none;
+  cursor: text;
+}
+
+input[type=text]:hover, input[type=email]:hover {
+  border-bottom: 1px solid #ff0e0e;
+}
+
+input[type=submit] {
+  border: 1px solid #333;
+  border-radius: 25px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover, input[type=submit]:focus {
+  border: 1px solid #ff1e1e;
+}
 
 /*# sourceMappingURL=index.css.map */
